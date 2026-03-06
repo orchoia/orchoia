@@ -135,7 +135,7 @@
         function loadLevel() {
             fetchVideo();
             const isEmoji = currentLevel % 2 === 0;
-            const size = currentLevel < 5 ? 3 : (currentLevel < 15 ? 4 : 5);
+            const size = currentLevel < 5 ? 6 : (currentLevel < 15 ? 8 : 12);
             const items = isEmoji ? ["🔥","💀","👑","🤡","👻","👽","🤖"] : "ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("");
             
             const target = items[Math.floor(Math.random() * items.length)];
